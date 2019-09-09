@@ -25,11 +25,14 @@ class _LoginPageState extends State<LoginPage> {
 
     return new Scaffold(
       appBar: new AppBar(
-        title: new Text('Login'),
         backgroundColor: Colors.black,
+        title: new Center(child: new Text('Login', textAlign: TextAlign.center, ))
+        
+        //title: new Text('Login'),
+        
       ),
       body: new Container(
-        padding: new EdgeInsets.all(20.0),
+        padding: new EdgeInsets.all(100.0),
         child: new Form(
           key: this._formKey,
           child: new ListView(
