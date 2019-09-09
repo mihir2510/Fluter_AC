@@ -26,6 +26,7 @@ class _LoginPageState extends State<LoginPage> {
     return new Scaffold(
       appBar: new AppBar(
         title: new Text('Login'),
+        backgroundColor: Colors.black,
       ),
       body: new Container(
         padding: new EdgeInsets.all(20.0),
@@ -37,7 +38,7 @@ class _LoginPageState extends State<LoginPage> {
                 keyboardType: TextInputType.emailAddress, // Use email input type for emails.
                 decoration: new InputDecoration(
                   hintText: 'you@example.com',
-                  labelText: 'E-mail Address'
+                  labelText: 'E-mail ID'
                 )
               ),
               new TextFormField(
@@ -48,6 +49,13 @@ class _LoginPageState extends State<LoginPage> {
                 )
               ),
               new Container(
+                decoration: BoxDecoration(
+                  gradient: LinearGradient(
+                    begin: Alignment.centerLeft,
+                    end: Alignment.centerRight,
+                    colors: [Colors.lightBlue, Colors.lightGreen]
+                  )
+                ),
                 width: screenSize.width,
                 child: new RaisedButton(
                   child: new Text(
@@ -57,7 +65,7 @@ class _LoginPageState extends State<LoginPage> {
                     ),
                   ),
                   onPressed: () => null,
-                  color: Colors.blue,
+                  color: Colors.transparent,
                 ),
                 margin: new EdgeInsets.only(
                   top: 20.0
