@@ -1,7 +1,7 @@
 # Flutter_AC
 This repository is part of the Flutter Audit Course in Sem V
 
-### Assignment 1
+## Assignment 1
 #### Problem Statement
 Create a Flutter app demonstrating the use of atleast 2 widgets
 
